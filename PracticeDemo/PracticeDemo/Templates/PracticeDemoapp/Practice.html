@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static  "css/Practice.css" %}" >
+</head>
+<body>
+<h1>this is function based html program</h1>
+{% for x in e %}
+<ul>
+    <li>{{x.eid|upper}}</li>
+    <li>{{x.ename|lower}}</li>
+    <li>{{x.esal}}</li>
+</ul>
+{%endfor%}
+</body>
+</html>
